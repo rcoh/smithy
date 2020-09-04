@@ -1,0 +1,2 @@
+[ERROR] smithy.example#AdditionalSchemasConflictResource: The AdditionalSchemasConflictResource property of the bar CloudFormation resource targets multiple shapes: [smithy.api#Boolean, smithy.api#String]. This should be resolved in the model or one of the members should be excluded from the conversion. | ResourceProperty
+[NOTE] smithy.example#AdditionalSchemasConflictProperties: The structure shape is not connected to from any service shape. | UnreferencedShape

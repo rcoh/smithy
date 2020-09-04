@@ -1,0 +1,1 @@
+[ERROR] smithy.example#FooStructure$member: Member with the mutability value of "write-only" is also marked as an additional identifier | MutabilityTrait

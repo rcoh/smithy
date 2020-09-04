@@ -1,0 +1,1 @@
+[ERROR] smithy.example#LifecycleConflictResource: The LifecycleConflictResource property of the bar CloudFormation resource targets multiple shapes: [smithy.api#Boolean, smithy.api#String]. This should be resolved in the model or one of the members should be excluded from the conversion. | ResourceProperty

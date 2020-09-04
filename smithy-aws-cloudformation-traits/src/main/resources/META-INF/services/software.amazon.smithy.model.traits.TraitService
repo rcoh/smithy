@@ -1,0 +1,5 @@
+software.amazon.smithy.aws.cloudformation.traits.AdditionalIdentifierTrait$Provider
+software.amazon.smithy.aws.cloudformation.traits.ExcludePropertyTrait$Provider
+software.amazon.smithy.aws.cloudformation.traits.MutabilityTrait$Provider
+software.amazon.smithy.aws.cloudformation.traits.PropertyNameTrait$Provider
+software.amazon.smithy.aws.cloudformation.traits.ResourceTrait$Provider
