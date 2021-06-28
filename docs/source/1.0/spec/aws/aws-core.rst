@@ -123,7 +123,7 @@ generating client names in SDKs and for linking between services.
   the first character cannot be a number, and when using spaces, each space must be
   between two alphanumeric characters.
 * The value MUST NOT contain "AWS", "Aws", or "Amazon".
-* The value must not case-insensitively end with "API", "Client", or "Service".
+* The value SHOULD not case-insensitively end with "API", "Client", or "Service". **Note**: serveral services exist which end with ``Service`` or ``API`` for backwards compatibility reasons.
 * The value MUST NOT change change once a service is publicly released. If the value
   does change, the service will be considered a brand new service in the AWS SDKs
   and Tools.
@@ -161,7 +161,7 @@ Using SDK service ID for client naming
 --------------------------------------
 
 Unless explicitly overridden though other traits or configuration, AWS SDKs
-SHOULD use the ``sdkId`` property when choosing the name of a client class.
+SHOULD use the ``sdkId`` property when choosing the name of a client class
 
 For the AWS CLI, the typical value need to use a command involves both
 lower-casing all characters of the ``sdkId`` and removing all spaces. So
@@ -178,6 +178,10 @@ appending the word "Client" to the final transformed "serviceId". So for the
 
 Other AWS SDKs SHOULD follow a similar pattern when choosing client names.
 
+**Note**:
+For backwards compatibility reasons, some services will include "service" or "API" as a suffix.
+New SDK major versions SHOULD strip ``service`` and ``api`` suffixes from ``sdkId`` when generating
+a client name.
 
 .. _service-cloudformation-name:
 
